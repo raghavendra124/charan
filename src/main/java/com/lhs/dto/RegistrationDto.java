@@ -122,6 +122,14 @@ public class RegistrationDto {
 	@Column(unique = true)
 	private String email;
 
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
