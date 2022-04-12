@@ -47,7 +47,6 @@ public	void generateMailWithAttachment( String toMail,String sub,String body) th
 		mes.setFrom("charanratnala98@gmail.com");
 		mes.setSubject(sub);
 		mes.setText(body);
-		//zmes.setTo(InternetAddress.parse("email1@test.com,email2@test.com")); 
 //		FileSystemResource r= new FileSystemResource(new File(attachment));
 //		
 //		

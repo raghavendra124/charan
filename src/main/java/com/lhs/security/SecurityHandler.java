@@ -51,7 +51,7 @@ public class SecurityHandler extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.csrf().disable().authorizeRequests().antMatchers("/authenticate", "/register").permitAll()
+		http.csrf().disable().authorizeRequests().antMatchers("/authenticate", "/register","/api/getemail/","/api/otp/").permitAll()
 				.antMatchers(HttpMethod.OPTIONS).permitAll().anyRequest().authenticated().and().exceptionHandling()
 				.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);
@@ -62,7 +62,7 @@ public class SecurityHandler extends WebSecurityConfigurerAdapter {
 	
 	
 	
-	
+	//
 	
 	
 	

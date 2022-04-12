@@ -11,7 +11,9 @@ public interface RegistrationRepo extends CrudRepository<RegistrationEntity, Int
 	boolean existsByUsername(String username);
 	boolean existsByEmail(String email);
 
-	RegistrationEntity findByUsername(String username);
+	RegistrationEntity findByUsername(String username);  
+	
+	
 	RegistrationEntity findByEmail(String email);
 	
 	

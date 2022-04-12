@@ -127,7 +127,7 @@ public class RegistrationEntity {
 		this.gender = gender;
 	}
 
-	private String email;
+	
 
 	public String getFirstName() {
 		return firstName;
@@ -153,6 +153,16 @@ public class RegistrationEntity {
 		this.phoneNo = phoneNo;
 	}
 
+	public String email;
+
+	public List<Roles> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Roles> roles) {
+		this.roles = roles;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -161,11 +171,15 @@ public class RegistrationEntity {
 		this.email = email;
 	}
 
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	@Override
 	public String toString() {
-		return "RegistrationEntity [id=" + id + ", role=" + role + ", rolen=" + role + ", firstname=" + firstName
-				+ ", lastname=" + lastName + ", username=" + username + ", password=" + password + ", dob=" + dob
-				+ ", gender=" + gender + ", mobileno=" + phoneNo + "]";
+		return "RegistrationEntity [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", username="
+				+ username + ", password=" + password + ", dob=" + dob + ", gender=" + gender + ", phoneNo=" + phoneNo
+				+ ", roles=" + roles + ", status=" + status + ", role=" + role + ", email=" + email + "]";
 	}
 
 }
